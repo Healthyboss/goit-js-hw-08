@@ -28,9 +28,9 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 form.addEventListener('submit', event => {
+  console.log(email.value);
+  console.log(message.value);
   event.preventDefault();
   localStorage.removeItem('feedback-form-state');
   form.reset();
-  console.log(email);
-  console.log(message);
 });
